@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+<script type="text/javascript" src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/analytics.js"></script>
+<link type="text/css" rel="stylesheet" href="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/banner-styles.css">
+
+
+
+
+	<title>www.asio.pl - moo-cdc - USB to serial converter using AVR-USB / V-USB library</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css" media="all">@import url(/web/20120311023321im_/http://www.asio.pl/style.css);</style>
+
+	<meta http-equiv="Content-Language" content="pl">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	
+	<meta name="title" content="www.asio.pl - moo-cdc - USB to serial converter using AVR-USB / V-USB library">
+	<meta name="description" content="www.asio.pl">
+	<meta name="keywords" content="moo-cdc, avr-cdc, v-usb, cdc, acm, usb, usb2rs, serial">
+	<meta name="robots" content="all">
+	<meta name="revisit-after" content="30 Days">
+	<meta name="author" content="Stefan Szczygielski, Moomean">
+	<meta name="copyright" content="(c)2007">
+	<meta name="generator" content="Vim">
+	<meta name="MSSmartTagsPreventParsing" content="true">
+	<meta http-equiv="imagetoolbar" content="no">
+	<script type="text/javascript" src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/obrazek.js"></script>
+
+	<style type="text/css">
+		#menu_ramka { width: 22%; position: absolute; left: 4px; top: 5px;
+		}
+		body > div#menu_ramka { position: fixed; }
+	</style>
+<!--[if gte IE 5.5]><![if lt IE 7]>
+	<style type="text/css">
+		div#menu_ramka {
+		left: 5 expression( ( 5 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+		top: expression( ( 5 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+		}
+	</style>
+<![endif]><![endif]-->
+
+	</head>
+<body><div id="wm-ipp" class="__wb_banner_div" style="display: block; position: relative; padding: 0px 5px; min-height: 70px; min-width: 800px;" lang="en">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="https://web.archive.org/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/wayback-toolbar-logo.png" alt="Wayback Machine" height="39" border="0" width="110"></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input name="url" id="wmtbURL" value="http://www.asio.pl/moo-cdc/" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" type="text"><input name="type" value="replay" type="hidden"><input name="date" value="20120311023321" type="hidden"><input value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" type="submit"><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="https://web.archive.org/web/20120110112122/http://www.asio.pl/moo-cdc/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="10 Jan 2012"><strong>JAN</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background: none repeat scroll 0% 0% rgb(0, 0, 0); color: rgb(255, 255, 0); font-size: 11px ! important; font-weight: bold; text-transform: uppercase; width: 34px; height: 15px; padding-top: 1px; text-align: center;" title="You are here: 2:33:21 Mar 11, 2012">Mar</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="https://web.archive.org/web/20121007223654/http://www.asio.pl/moo-cdc/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="7 Oct 2012"><strong>OCT</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="https://web.archive.org/web/20120110112122/http://www.asio.pl/moo-cdc/" title="11:21:22 Jan 10, 2012" style="background-color:transparent;border:none;"><img src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/wm_tb_prv_on.png" alt="Previous capture" height="16" border="0" width="14"></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background: none repeat scroll 0% 0% rgb(0, 0, 0); color: rgb(255, 255, 0); width: 34px; height: 24px; padding: 2px 0px 0px; text-align: center; font-size: 24px; font-weight: bold;" title="You are here: 2:33:21 Mar 11, 2012">11</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="https://web.archive.org/web/20121007223654/http://www.asio.pl/moo-cdc/" title="22:36:54 Oct 7, 2012" style="background-color:transparent;border:none;"><img src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/wm_tb_nxt_on.png" alt="Next capture" height="16" border="0" width="14"></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="https://web.archive.org/web/20110205044247/http://www.asio.pl/moo-cdc/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="5 Feb 2011"><strong>2011</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background: none repeat scroll 0% 0% rgb(0, 0, 0); color: rgb(255, 255, 0); font-size: 11px ! important; font-weight: bold; padding-top: 1px; width: 34px; height: 13px; text-align: center;" title="You are here: 2:33:21 Mar 11, 2012">2012</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="https://web.archive.org/web/20130813214916/http://asio.pl/moo-cdc/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="13 Aug 2013"><strong>2013</strong></a>
+		                
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="https://web.archive.org/web/20120311023321*/http://www.asio.pl/moo-cdc/" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>11 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">13 Sep 10 - 13 Aug 13</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:475px;height:27px;" href="https://web.archive.org/web/20130101000000/http://www.asio.pl/moo-cdc/" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:475px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;" onmouseover="showTrackers('inline');" onmouseout="showTrackers('none');" onmousemove="trackMouseMove(event,this)" alt="sparklines" src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/graph.png" height="27" border="0" width="475">
+			<img id="wbMouseTrackYearImg" style="display: none; position: absolute; z-index: 9010; left: 425px;" src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/transp-yellow-pixel.png" height="27" border="0" width="25">
+			<img id="wbMouseTrackMonthImg" style="display: none; position: absolute; z-index: 9011; left: 426px;" src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/transp-red-pixel.png" height="27" border="0" width="2">
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app3.us.archive.org";}; </script>
+
+<script type="text/javascript" src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/disclaim-element.js"></script>
+<script type="text/javascript" src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/graph-calc.js"></script>
+<script type="text/javascript" src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/jquery.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1420070399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.asio.pl\/moo-cdc\/";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 475;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "11";
+var displayMonth = "Mar";
+var displayYear = "2012";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+	<div id="menu_ramka">
+<b class="rtop2">
+  <b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b>
+</b>
+	<div id="menu">
+		<p class="center" style="font-size: large; margin: 0%;">
+			<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/">Home</a><br>
+<!--			<a href="/?m=mapa">Site map</a><br/>-->
+		</p>
+		<p class="center" style="margin: 3px">
+			<img src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/kot.jpg" alt="/kot.jpg"><br>
+		</p>
+		<p style="margin: 0%" class="center">
+		</p>
+		<hr>
+<p style="margin-top: 0em; margin-bottom: 0.5em;">Projects<span lang="pl">/Projekty</span>:</p>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/moo-cdc/">moo-cdc</a><br>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/bobas-ng/">bobas-ng</a><br>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/zigbee/">ZigBee</a><br>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/waga/">Waga</a><br>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/tid/">TID Komputerek</a><br>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/?m=kamera">CMOS Camera</a><br>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/arms/">ARM hints</a><br>
+<hr>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/linux/">Linux stuff</a><br>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/?m=minix">Minix</a><br>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/?m=interesting">Interesting</a><br>
+<hr>
+<!--<p style="margin-top: 0em; margin-bottom: 0.5em;">Nissan Almera N15:</p>-->
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/?m=almera-centralny">Centralny w Almerze N15</a><br>
+<hr>
+<p style="margin-top: 0em; margin-bottom: 0.5em;">Studies:</p>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/fuw/">FUW</a>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/?m=eiti">EiTI</a><br>
+<hr>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/galeria/">Pictures</a><br>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/?m=links">Links</a><br>
+<a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/?m=hints">Hints</a><br>
+
+		<hr>
+		<h2 class="center"><br>
+		</h2>
+	</div>
+<b class="rbottom2">
+  <b class="r4"></b> <b class="r3"></b> <b class="r2"></b> <b class="r1"></b>
+</b>
+	</div>
+<div id="strona">
+<b class="rtop">
+  <b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b>
+</b>
+	<div id="tresc">
+<h1>moo-cdc - AVR firmware-based USB to serial converter</h1>
+<hr>
+<p>
+This is an improved software AVR-based usb to serial converter based on
+<a href="https://web.archive.org/web/20120311023321/http://www.recursion.jp/avrcdc/">www.recursion.jp/avrcdc/</a>.
+</p>
+
+<p style="float:right; text-align: center;">
+	<a onclick="return pokazObrazek('/img/moo-cdc/progr640.jpg','640','304','Serial converter using moo-cdc')" href="https://web.archive.org/web/20120311023321/http://www.asio.pl/img/moo-cdc/progr640.jpg"><img style="margin: 10px;" src="www.asio.pl%20-%20moo-cdc%20-%20USB%20to%20serial%20converter%20using%20AVR-USB%20_%20V-USB%20library_files/progr240.jpg" alt="Serial converter using moo-cdc"></a><br>
+	<i style="font-size: small;">Serial converter using moo-cdc</i>
+</p>
+<p>
+It uses <a href="https://web.archive.org/web/20120311023321/http://www.obdev.at/products/avrusb/">V-USB</a> firmware-based USB protocol stack for AVR.
+</p>
+
+<p>
+Some tricks/hacks have been made to achieve <b>stable communication at 115200 baud</b>:
+</p>
+<ul>
+	<li>256-byte serial RX buffer placed on 0x??00 aligned address boundary</li>
+	<li>RX buffer data pointer indexed by single dedicated register</li>
+	<li>stackable RX interrupts</li>
+	<li>assembly-optimised RX interrupt routine</li>
+	<li>RX interrupt routine works with AVRs with serial registers outside of <b>sbi/cbi</b> instruction reach (Atmega88)</li>
+	<li>8-byte serial TX buffer</li>
+	<li>stores 1-8 bytes from USB packet, disables data receiving until all data sent through serial</li>
+	<li>supported bauds 9600, 19200, 38400, 57600, 115200</li>
+	<li>parity/stop bit setup</li>
+	<li>parameter setting works with both Windows and Linux</li>
+	<li>to be used with 16Mhz AVR clock</li>
+	<li>LED indicating received data</li>
+</ul>
+<p>I am using this converter mainly for console and X-MODEM firmware upload.
+The only problems encountered are those ralated to baudrate mismatch
+- AVR running at 16Mhz can't divide it's speed to get exactly 115200 bps.
+Pairing it with another AVR using internal RC oscillator can complicate this situation even more
+- don't expect such configuration to work correctly especially at low voltages and temperatures without calibrating first.
+</p>
+Keep in mind that first ATmega devices (Atmega8, Atmega16 and so on) have separate factory calibrated oscillator values
+for different speeds - only the one for 1Mhz operation is loaded automatically.
+And it is said to be +/- 3% at 5V, 25°C.
+<p></p>
+<p>
+Check for baudrate problems before blaming moo-cdc!
+</p>
+<ul>
+	<li><a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/pliki/moo-cdc-20100130.zip">moo-cdc-20100130.zip</a> - source code</li>
+	<li><a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/pliki/moo-cdc-20100130-m8.hex">moo-cdc-20100130-m8.hex</a> - binary for Atmega8, LED at PC4</li>
+	<li><a href="https://web.archive.org/web/20120311023321/http://www.asio.pl/pliki/moo-cdc-20100130-m88.hex">moo-cdc-20100130-m88.hex</a> - binary for Atmega88, LED at PC4</li>
+</ul>
+<p><b>TODO: </b> Implement saving serial port configuration after USB 
+suspend. I would like my converter to keep parameters after laptop being
+ hibernated.</p>
+<p>Didn't test it thoroughly if it can handle full 115200 bits full-duplex, but I suppose it can.</p>	</div>
+<div id="stopka">
+<p>
+<a href="https://web.archive.org/web/20120311023321/http://validator.w3.org/check?uri=referer" title="Sprawdź poprawnośc kodu HTML">HTML</a>
+<a href="https://web.archive.org/web/20120311023321/http://jigsaw.w3.org/css-validator/check/referer" title="Sprawdź poprawnośc kodu CSS">CSS</a>
+</p>
+</div>
+<b class="rbottom">
+  <b class="r4"></b> <b class="r3"></b> <b class="r2"></b> <b class="r1"></b>
+</b>
+</div>
+
+
+
+
+
+
+
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 2:33:21 Mar 11, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 9:18:07 Apr 11, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
