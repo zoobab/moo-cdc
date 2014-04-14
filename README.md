@@ -1,3 +1,6 @@
+Installation
+============
+
 You need to copy or link the usbdrv directory from V-USB package here.
 V-USB can be downloaded from http://www.obdev.at/products/avrusb/.
 Tested to work with vusb-20090822.
@@ -12,3 +15,13 @@ with Linux and the inf-only driver for Windows XP.
 
 Have fun!
 S.
+
+Links
+=====
+
+Elektroda Polish forum:
+* http://www.elektroda.pl/rtvforum/topic1560638.html
+
+Original Moo-CDC webpage on archive.org:
+* https://web.archive.org/web/20120311023321/http://www.asio.pl/moo-cdc/
+
