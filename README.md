@@ -25,3 +25,18 @@ Elektroda Polish forum:
 Original Moo-CDC webpage on archive.org:
 * https://web.archive.org/web/20120311023321/http://www.asio.pl/moo-cdc/
 
+Toolchain
+=========
+
+I had to install an old version of avr-gcc (the one shipped with Debian
+Squeeze) in order to avoid those errors:
+
+    avr-gcc -I"usbdrv/" -I"./"  -mmcu=atmega88 -Wall -gdwarf-2 -std=gnu99     -DF_CPU=16000000UL -Os -fsigned-char -MD -MP -MT usbdrv.o -c  usbdrv/usbdrv.c
+    In file included from usbdrv/usbdrv.c:12:0:
+    usbdrv/usbdrv.h:455:6: error: variable ‘usbDescriptorDevice’ must be const in order to be put into read-only section by means of ‘__attribute__((progmem))’
+     char usbDescriptorDevice[];
+          ^
+    usbdrv/usbdrv.h:461:6: error: variable ‘usbDescriptorConfiguration’ must be const in order to be put into read-only section by means of ‘__attribute__((progmem))’
+     char usbDescriptorConfiguration[];
+    
+    [...]
