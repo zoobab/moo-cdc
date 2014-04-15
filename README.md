@@ -25,6 +25,9 @@ Elektroda Polish forum:
 Original Moo-CDC webpage on archive.org:
 * https://web.archive.org/web/20120311023321/http://www.asio.pl/moo-cdc/
 
+AVR-CDC:
+* http://www.recursion.jp/avrcdc/
+
 Toolchain
 =========
 
@@ -39,4 +42,12 @@ Squeeze) in order to avoid those errors:
     usbdrv/usbdrv.h:461:6: error: variable ‘usbDescriptorConfiguration’ must be const in order to be put into read-only section by means of ‘__attribute__((progmem))’
      char usbDescriptorConfiguration[];
     
-    [...]
+   [...]
+
+Todo
+====
+
+* Make schematics
+* Port for atmega328p
+* Test for 115200
+* 3.3V Vs 5V
