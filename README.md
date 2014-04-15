@@ -28,6 +28,9 @@ Original Moo-CDC webpage on archive.org:
 AVR-CDC:
 * http://www.recursion.jp/avrcdc/
 
+* Monte uma placa de testes para o AVR da Atmel:
+http://www.dimensaobynet.com.br/mic/?p=885
+
 Toolchain
 =========
 
